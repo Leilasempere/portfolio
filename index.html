@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Portfolio</title> 
+</head>
+<body>
+
+
+  <!-- Écran d'introduction -->
+  <div id="intro-screen" class="screen">
+    <img src="assets/woman.png" alt="Photo de profil" class="picture" style="width: 150px;">
+    <h1>Leïla Sempere</h1>
+    <h2>Développeuse Web Junior Full Stack</h2>
+    <button id="enter-btn" class="btn">Voir mon portfolio</button>
+  </div>
+
+  <!-- Contenu principal MASQUÉ au départ -->
+  <div id="main-content" style="display: none;">
+  
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-primary" href="#">Leïla Sempere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Profil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Expériences professionnelles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Formation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+        <main>
+
+          <section id="experience" class="experience-section">
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            <div id="experience-list" class="experience-list"></div>
+            <a href="#experience"></a>
+          </section>
+
+          <section id="education" class="education-section">
+            <h2 class="section-title">Formation</h2>
+            <ul class="list-unstyled">
+              <li>
+                <strong>Baccalauréat Sciences Economiques et Sociales - 2004</strong><br>
+                Lycée Pardailhan - Auch (32)
+              </li>
+              <li>
+                <strong>CAP Esthétique Cosmétique Parfumerie - 2014</strong><br>
+                Ecole Marge Verlair - Toulouse (31)
+              </li>
+              <li>
+                <strong>Titre Professionnel Développeur Web et Web Mobile - En cours de validation</strong><br>
+                AFEC - Bayonne (64)
+              </li>
+            </ul>
+          </section>
+
+          <section id="skills" class="skills-section">
+            <h2 class="section-title">Compétences</h2>
+            <div id="skills-container" class="row"></div>
+          </section>
+          
+            
+            <section id="projects">
+                <h2>Mes projets</h2>
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    
+              
+                    <!-- Projet 1 -->
+                    <div class="carousel-item active">
+                      <img src="assets/imageportfolio.jpg" class="d-block w-100" alt="">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                        <h5>Projet 1 : Maquette Figma </h5>
+                        <p>Une maquette réalisée sur Figma pour un site de rencontre</p>
+                        <p>Un site HTML/CSS/JavaScript responsive réalisé en début de formation.</p>
+                        <a href="" class="btn btn-primary" target="_blank">Voir le projet</a>
+                      </div>
+                    </div>
+              
+                    <!-- Projet 2 -->
+                    <div class="carousel-item">
+                      <img src="assets/imageportfolio.jpg" class="d-block w-100" alt="Projet 2">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                        <h5>Projet 2 : Application Météo</h5>
+                        <p>Une application météo dynamique utilisant une API.</p>
+                        <a href="" class="btn btn-primary" target="_blank">Voir le projet</a>
+                      </div>
+                    </div>
+              
+                    <!-- Projet 3 -->
+                    <div class="carousel-item">
+                      <img src="assets/imageportfolio.jpg" class="d-block w-100" alt="Projet 3">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                        <h5>Projet 3 : Portfolio personnel</h5>
+                        <p>Un site portfolio moderne codé avec Bootstrap.</p>
+                        <a href="" class="btn btn-primary" target="_blank">Voir le projet</a>
+                      </div>
+                    </div>
+              
+                  </div>
+              
+                  <!-- Contrôles -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                  </button>
+                </div>
+              </section>
+              
+            
+            
+              <section id="contact" class="contact-section">
+               
+                <h2 class="contact-title">Me contacter</h2>
+                <form id="contact-form" class="contact-form" action="#" method="post">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Nom:</label>
+                    <input type="text" id="name" name="name" class="form-input">
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-input">
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" class="form-textarea"></textarea>
+                  </div>
+              
+                  <div class="form-group">
+                    <input type="submit" value="Envoyer" class="form-submit">
+                  </div>
+                </form>
+              </section>
+        </main>
+              
+
+        
+        
+        
+        
+        
+        
+        <footer>
+            <a href="#contact">Contact</a>
+            <a href="mentions.html">Mentions légales</a>
+            <a href="confidentialite.html">Politique de confidentialité</a>
+            <p>&copy; 2025 - Leila Sempere - Tout droit réservé </p>
+            
+        </footer>
+  </div>
+            
+        
+        
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="skills.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
