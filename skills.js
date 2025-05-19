@@ -5,6 +5,7 @@ const skills = [
     { name: "CSS",
          logo: "assets/css-3.png" },
 
+
     { name: "JavaScript", 
         logo: "assets/java-script.png" },
 
@@ -16,6 +17,11 @@ const skills = [
 
     { name: "GitHub", 
         logo: "assets/github.png" },
+
+    { name: "React",
+        logo: "assets/react.png" },
+
+    
   ];
 
   

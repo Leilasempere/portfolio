@@ -3,27 +3,27 @@
     {
     "id": 1,
     "emploi":"Esthéticienne",
-    "nom":["Studio 64 ", "Escale Douceur", "Grain de Beauté"],
-    "lieu":["Anglet", " Bayonne", "Fleurance"],
-    "datedebut": "2015-08-01",
-    "datefin": "2025-03-01"
+    "nom":["Studio 64 - Escale Douceur - Grain de Beauté"],
+    "lieu":["Anglet - Bayonne - Fleurance "],
+    "datedebut": "01/08/2015",
+    "datefin": "01/03/2025"
 },
     {
     "id": 2,
     "emploi":"Téléopératrice-Service Client",
-    "nom":["Téléperformance", "Fleurance Nature"],
-    "lieu":["Toulouse", "Fleurance"],
-    "datedebut": "2008-10-01",
-    "datefin": "2015-04-01"
+    "nom":["Téléperformance - Fleurance Nature"],
+    "lieu":["Toulouse - Fleurance "],
+    "datedebut": "01/10/2008",
+    "datefin": "01/04/2015"
     },
     
     {
         "id": 3,
     "emploi":"Animatrice Club de Vacances",
     "nom":"Club Med",
-    "lieu":["La Palmyre Atlantique", "Serre-Chevalier", "Les Arcs", "La Plagne", "Palmiye Kemer"],
-    "datedebut": "2005-11-01",
-    "datefin": "2008-10-01"
+    "lieu":["La Palmyre Atlantique - Serre-Chevalier - Les Arcs - La Plagne - Palmiye Kemer "],
+    "datedebut": "01/11/2005",
+    "datefin": "01/10/2008"
     }
     
 ]

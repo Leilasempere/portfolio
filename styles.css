@@ -1,52 +1,209 @@
-#skills-container {
-    position: relative;
-    width: 120px;
-    height: auto; /* hauteur de l'espace d'animation */
-    overflow: hidden;
-  }
-  
-  
+/* Styles généraux */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
 
-  .row img {
-    width: 20px; /* petit modèle */
-   
-    height: auto;
-    animation: float 6s ease-in-out infinite;
+/* En-tête */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
 
-  }
-  
-  @keyframes float {
-    0% {
-      transform: translateY(0px) translateX(0px);
-    }
-    50% {
-      transform: translateY(-20px) translateX(10px);
-    }
-    100% {
-      transform: translateY(0px) translateX(0px);
-    }
-  }
-  
-  .fade-out {
-    animation: fadeOut 0.8s forwards;
-  }
-  
-  .fade-in {
-    animation: fadeIn 0.8s forwards;
-  }
-  
-  @keyframes fadeOut {
-    to {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.nav-item {
+  color: black;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.themeBtn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Ajout d'une transition */
+}
+
+/* Section principale */
+main {
+  padding: 20px; /* Ajout d'un padding pour espacer le contenu */
+}
+
+section {
+  margin-bottom: 20px;
+  background: linear-gradient(to right, black, white);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+}
+
+section h2 {
+  margin-top: 0;
+ 
+  font-size: 2em;
+  color: #2e7d32;
+} 
+
+#skills {
+  background: linear-gradient(to right, black, white);
+ 
+}
+
+
+
+/* Liens */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+
+#intro-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, black, white); /* */
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1.2s ease-in;
+}
+
+#intro-screen h1 {
+  font-size: 3rem;
+  color: white;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+#intro-screen h2 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.picture:hover {
+  transform: scale(1.05);
+}
+
+#enter-btn {
+  background-color: black;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#enter-btn:hover {
+  background-color: gray;
+}
+
+
+
+
+.contact-section {
+  background: linear-gradient(to bottom right, black, white);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white; 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #2e7d32;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+.form-submit {
+  background-color:black;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+  background-color: #2e7d32;
+}

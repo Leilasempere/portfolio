@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +20,20 @@
 
   <!-- Contenu principal MASQUÉ au départ -->
   <div id="main-content" style="display: none;">
+   
   
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold text-primary" href="#">Leïla Sempere</a>
+          <a class="navbar-brand fw-bold text-dark" href="#">Leïla Sempere</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <button id="theme-toggle" class="themeBtn">🌙</button>
+
           
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -49,7 +53,7 @@
                 <a class="nav-link" href="#projects">Projets</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#mecontacter">Me Contacter</a>
               </li>
             </ul>
           </div>
@@ -99,10 +103,10 @@
                     <div class="carousel-item active">
                       <img src="assets/imageportfolio.jpg" class="d-block w-100" alt="">
                       <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
-                        <h5>Projet 1 : Maquette Figma </h5>
+                        <h5>Projet 1 : Réaliser une maquette </h5>
                         <p>Une maquette réalisée sur Figma pour un site de rencontre</p>
-                        <p>Un site HTML/CSS/JavaScript responsive réalisé en début de formation.</p>
-                        <a href="" class="btn btn-primary" target="_blank">Voir le projet</a>
+                        <p></p>
+                        <a href="https://www.figma.com/design/jKfYkj8OuLLUoIkI3TMiVH/Le-temps-d-aimer?node-id=3-5&p=f&t=qJXiQ0DDhcD1NB8S-0" class="btn btn-primary" target="_blank">Voir le projet</a>
                       </div>
                     </div>
               
@@ -110,9 +114,9 @@
                     <div class="carousel-item">
                       <img src="assets/imageportfolio.jpg" class="d-block w-100" alt="Projet 2">
                       <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
-                        <h5>Projet 2 : Application Météo</h5>
-                        <p>Une application météo dynamique utilisant une API.</p>
-                        <a href="" class="btn btn-primary" target="_blank">Voir le projet</a>
+                        <h5>Projet 2 : Projet de création d'un site de rencontre</h5>
+                        <p>Un site HTML/CSS/JavaScript responsive réalisé en début de formation.</p>
+                        <a href="https://github.com/Leilasempere/Sitederencontre" class="btn btn-primary" target="_blank">Voir le projet</a>
                       </div>
                     </div>
               
@@ -142,7 +146,7 @@
               
             
             
-              <section id="contact" class="contact-section">
+              <section id="mecontacter" class="contact-section">
                
                 <h2 class="contact-title">Me contacter</h2>
                 <form id="contact-form" class="contact-form" action="#" method="post">
@@ -176,7 +180,6 @@
         
         
         <footer>
-            <a href="#contact">Contact</a>
             <a href="mentions.html">Mentions légales</a>
             <a href="confidentialite.html">Politique de confidentialité</a>
             <p>&copy; 2025 - Leila Sempere - Tout droit réservé </p>
