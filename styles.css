@@ -1,117 +1,88 @@
-/* Styles généraux */
+/* --------- Base globale --------- */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #f0f0f0;
   color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* En-tête */
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* --------- Header / Navbar --------- */
 header {
   background-color: black;
   color: white;
   padding: 20px 0;
   text-align: center;
 }
-
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+.navbar {
+  background-color: #f8f9fa !important;
 }
-
-.nav-item {
-  color: black;
+.navbar-brand, .nav-link {
+  color: black !important;
 }
-
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
 .themeBtn {
   background-color: black;
   color: white;
   padding: 10px 20px;
+  margin-left: 1rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Ajout d'une transition */
+  transition: background-color 0.3s ease;
+}
+.themeBtn:hover {
+  background-color: gray;
 }
 
-/* Section principale */
+/* --------- Sections --------- */
 main {
-  padding: 20px; /* Ajout d'un padding pour espacer le contenu */
+  padding: 20px;
 }
-
 section {
   margin-bottom: 20px;
-  background: linear-gradient(to right, black, white);
+  background: linear-gradient(to right, black,#444);
   color: white;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
 }
-
 section h2 {
   margin-top: 0;
- 
   font-size: 2em;
   color: #2e7d32;
-} 
-
-#skills {
-  background: linear-gradient(to right, black, white);
- 
 }
 
-
-
-/* Liens */
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Pied de page */
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background-color: black;
-  color: white;
-  margin-top: 20px;
-}
-
+/* --------- Intro Page accueil--------- */
 #intro-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to bottom right, black, white); /* */
+  background: linear-gradient(to bottom right, black, white);
   text-align: center;
   padding: 2rem;
   animation: fadeIn 1.2s ease-in;
 }
-
 #intro-screen h1 {
   font-size: 3rem;
   color: white;
   margin: 1rem 0;
   font-weight: 700;
 }
-
 #intro-screen h2 {
   font-size: 1.5rem;
   color: white;
   margin-bottom: 2rem;
 }
-
 .picture {
   width: 150px;
   height: 150px;
@@ -124,7 +95,6 @@ footer {
 .picture:hover {
   transform: scale(1.05);
 }
-
 #enter-btn {
   background-color: black;
   color: white;
@@ -139,9 +109,41 @@ footer {
   background-color: gray;
 }
 
+/* --------- Compétences / Skills --------- */
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.skill-logo {
+  transition: transform 0.3s;
+}
+
+.skill-logo:hover {
+  transform: scale(1.1);
+}
+
+
+/*---------projects ---------*/
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 1 !important; /* assure la visibilité */
+  z-index: 10;
+}
 
 
 
+
+
+
+
+/* --------- Contact Formulaire--------- */
 .contact-section {
   background: linear-gradient(to bottom right, black, white);
   padding: 60px 20px;
@@ -149,34 +151,31 @@ footer {
   font-family: 'Segoe UI', sans-serif;
   color: white;
 }
-
 .contact-title {
   font-size: 2.5rem;
   margin-bottom: 30px;
   font-weight: 700;
 }
 
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  background: white; 
+  background: white;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-
 .form-group {
   margin-bottom: 20px;
   text-align: left;
 }
-
 .form-label {
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
   color: black;
 }
-
 .form-input,
 .form-textarea {
   width: 100%;
@@ -186,15 +185,13 @@ footer {
   font-size: 1rem;
   transition: border-color 0.3s;
 }
-
 .form-input:focus,
 .form-textarea:focus {
   border-color: #2e7d32;
   outline: none;
 }
-
 .form-submit {
-  background-color:black;
+  background-color: black;
   color: white;
   padding: 12px 30px;
   border: none;
@@ -203,7 +200,60 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .form-submit:hover {
   background-color: #2e7d32;
+}
+
+/* --------- Footer --------- */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* --------- Dark Mode --------- */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.dark-mode .navbar,
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1a1a1a !important;
+}
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+  color: white !important;
+}
+.dark-mode section {
+  background: linear-gradient(to right, #1a1a1a, #333);
+  color: white;
+}
+.dark-mode section h2 {
+  color: #2e7d32;
+}
+.dark-mode .contact-form {
+  background-color: #1e1e1e;
+  color: white;
+}
+.dark-mode .form-label {
+  color: white;
+}
+
+/* --------- Animations --------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

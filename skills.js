@@ -1,3 +1,7 @@
+
+//-------------Compétences------------//
+//array d'objets contenant le nom et le logo de chaque compétence//
+
 const skills = [
     { name: "HTML", 
         logo: "assets/html.png" },
